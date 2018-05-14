@@ -48,9 +48,9 @@
         
     ],
     "vim.leader": "<space>",
-    // "vim.handleKeys":{
-        // "<C-a>": false,
-        // "<C-f>": false
-    // }
+    "vim.handleKeys":{
+        "<C-a>": false,
+        "<C-f>": false
+    },
     "editor.lineNumbers": "relative"
 }
