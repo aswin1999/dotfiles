@@ -50,7 +50,8 @@
     "vim.leader": "<space>",
     "vim.handleKeys":{
         "<C-a>": false,
-        "<C-f>": false
+        "<C-f>": true,
+        "<C-k>": false
     },
     "editor.lineNumbers": "relative"
 }
