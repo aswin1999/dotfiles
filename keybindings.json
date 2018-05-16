@@ -1,0 +1,20 @@
+// Place your key bindings in this file to overwrite the defaults
+[{
+  "key": "ctrl+h",
+  "command": "workbench.action.focusPreviousGroup",
+  "when": "!terminalFocus"
+},{
+  "key": "ctrl+l",
+  "command": "workbench.action.focusNextGroup",
+  "when": "!terminalFocus"
+},{
+    "key": "ctrl+-",
+    "command": "workbench.action.decreaseViewSize",
+    "when": "editorTextFocus"
+},{
+    "key": "ctrl+=",
+    "command": "workbench.action.increaseViewSize",
+    "when": "editorTextFocus"
+}
+    
+]
