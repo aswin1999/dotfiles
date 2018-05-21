@@ -1,20 +1,59 @@
 // Place your key bindings in this file to overwrite the defaults
-[{
+[
+{
   "key": "ctrl+h",
   "command": "workbench.action.focusPreviousGroup",
   "when": "!terminalFocus"
-},{
+},
+{
   "key": "ctrl+l",
   "command": "workbench.action.focusNextGroup",
   "when": "!terminalFocus"
-},{
+},
+{
     "key": "ctrl+-",
     "command": "workbench.action.decreaseViewSize",
     "when": "editorTextFocus"
-},{
+},
+{
     "key": "ctrl+=",
     "command": "workbench.action.increaseViewSize",
     "when": "editorTextFocus"
+},
+{
+  "key": "ctrl+k z",
+  "command": "workbench.action.toggleFullScreen"
+},
+{
+  "key": "f11",
+  "command": "-workbench.action.toggleFullScreen"
+},
+{
+  "key": "f11",
+  "command": "workbench.action.toggleZenMode"
+},
+{
+  "key": "ctrl+k z",
+  "command": "-workbench.action.toggleZenMode"
+},
+{
+  "key": "alt+l",
+  "command": "cursorRight",
+  "when": "textInputFocus"
+},
+{
+  "key": "alt+h",
+  "command": "cursorLeft",
+  "when": "textInputFocus"
+},
+{
+  "key": "alt+j",
+  "command": "cursorDown",
+  "when": "textInputFocus"
+},
+{
+  "key": "alt+k",
+  "command": "cursorUp",
+  "when": "textInputFocus"
 }
-    
 ]
