@@ -7,27 +7,43 @@
     "vim.hlsearch": true,
     "vim.insertModeKeyBindings": [
         {
-            "before": ["j","j"],
-            "after": ["<Esc>"]
+            "before": [
+                "j",
+                "j"
+            ],
+            "after": [
+                "<Esc>"
+            ]
         }
     ],
     "vim.otherModesKeyBindingsNonRecursive": [
         {
-            "before": ["<leader>","d"],
-            "after": ["d", "d"]
+            "before": [
+                "<leader>",
+                "p"
+            ],
+            "after": [
+                "o",
+                "<Esc>",
+                "p"
+            ]
         },
         {
-            "before":["<C-n>"],
-            "after":[],
+            "before": [
+                "<C-n>"
+            ],
+            "after": [],
             "commands": [
                 {
                     "command": ":nohl"
                 }
             ]
         },
-                    
         {
-            "before": ["leader", "w"],
+            "before": [
+                "leader",
+                "w"
+            ],
             "after": [],
             "commands": [
                 {
@@ -37,21 +53,33 @@
             ]
         },
         {
-            "before":["<leader>","q","q"],
-            "after":[],
+            "before": [
+                "<leader>",
+                "q",
+                "q"
+            ],
+            "after": [],
             "commands": [
                 {
                     "command": "workbench.action.closeActiveEditor"
                 }
             ]
+        },
+        {
+            "before": [
+                "<CR>"
+            ],
+            "after": [
+                "o",
+                "<Esc>"
+            ]
         }
-        
     ],
     "vim.leader": "<space>",
-    "vim.handleKeys":{
+    "vim.handleKeys": {
         "<C-a>": false,
         "<C-b>": false,
-        "<C-k>":false
+        "<C-k>": false
     },
     "editor.lineNumbers": "relative",
     "editor.minimap.enabled": false,
@@ -62,6 +90,14 @@
     "gitlens.defaultDateStyle": "absolute",
     "gitlens.currentLine.enabled": false,
     "zenMode.hideStatusBar": false,
-    "terminal.integrated.shell.linux": "/bin/bash",
-    "keyboard.dispatch": "keyCode"
+    "terminal.integrated.shell.linux": "bash",
+    "keyboard.dispatch": "keyCode",
+    "python.pythonPath": "/usr/bin/python3",
+    "prettier.eslintIntegration": true,
+    "editor.tabSize": 2,
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact",
+        "vue-html": "html"
+    },
+    "explorer.openEditors.visible": 0
 }
