@@ -1,6 +1,5 @@
 {
     "vim.easymotion": true,
-    "vim.sneak": true,
     "vim.incsearch": true,
     "vim.useSystemClipboard": true,
     "vim.useCtrlKeys": true,
@@ -16,7 +15,7 @@
             ]
         }
     ],
-    "vim.otherModesKeyBindingsNonRecursive": [
+    "vim.normalModeKeyBindings": [
         {
             "before": [
                 "<leader>",
@@ -54,6 +53,19 @@
         },
         {
             "before": [
+                "leader",
+                "f"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "editor.action.formatDocument",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
                 "<leader>",
                 "q",
                 "q"
@@ -73,6 +85,46 @@
                 "o",
                 "<Esc>"
             ]
+        },
+        {
+            "before": [
+                "w"
+            ],
+            "after": [
+                "<leader>",
+                "<leader>",
+                "w"
+            ]
+        },
+        {
+            "before": [
+                "b"
+            ],
+            "after": [
+                "<leader>",
+                "<leader>",
+                "b"
+            ]
+        },
+        {
+            "before": [
+                "e"
+            ],
+            "after": [
+                "<leader>",
+                "<leader>",
+                "l"
+            ]
+        },
+        {
+            "before": [
+                "r"
+            ],
+            "after": [
+                "<leader>",
+                "<leader>",
+                "h"
+            ]
         }
     ],
     "vim.leader": "<space>",
@@ -85,6 +137,7 @@
     "editor.minimap.enabled": false,
     "window.zoomLevel": 0,
     "gitlens.advanced.messages": {
+        "suppressResultsExplorerNotice": true,
         "suppressShowKeyBindingsNotice": true
     },
     "gitlens.defaultDateStyle": "absolute",
@@ -99,5 +152,6 @@
         "javascript": "javascriptreact",
         "vue-html": "html"
     },
-    "explorer.openEditors.visible": 0
+    "explorer.openEditors.visible": 0,
+    "git.enableSmartCommit": true
 }
