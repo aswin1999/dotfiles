@@ -1,0 +1,11 @@
+[user]
+	email = aswinmprabhu@gmail.com
+	name = Aswin M Prabhu
+[alias]
+	ls = log --oneline
+	s = status
+	co = checkout
+	ca = commit -a --amend -C HEAD
+	cm = !git add -A && git commit -m
+[core]
+	excludesfile = /home/aswin1999/.gitignore_global
