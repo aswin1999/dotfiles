@@ -96,9 +96,18 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export EDITOR="nvim"
 alias fzfag="ag --nobreak --noheading . | fzf"
-alias vim="nvim"
-alias tmux="tmux -u -2"
+alias tmux="tmux -2 -u"
+alias vim="nvim.appimage"
 alias c="clear"
+
+source ~/.local/bin/virtualenvwrapper.sh
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+source ~/.local/bin/virtualenvwrapper.sh
+
+
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 if [[ $TERM = dumb ]]; then
