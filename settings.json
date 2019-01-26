@@ -1,217 +1,221 @@
 {
-    "vim.easymotion": true,
-    "vim.incsearch": true,
-    "vim.useSystemClipboard": true,
-    "vim.useCtrlKeys": true,
-    "vim.hlsearch": true,
-    "vim.insertModeKeyBindings": [
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["<leader>", "p"],
+      "after": ["o", "<Esc>", "p"]
+    },
+    {
+      "before": ["<C-n>"],
+      "after": [],
+      "commands": [
         {
-            "before": ["j", "j"],
-            "after": ["<Esc>"]
+          "command": ":nohl"
         }
-    ],
-    "vim.normalModeKeyBindings": [
+      ]
+    },
+    {
+      "before": ["leader", "w"],
+      "after": [],
+      "commands": [
         {
-            "before": ["<leader>", "p"],
-            "after": ["o", "<Esc>", "p"]
-        },
-        {
-            "before": ["<C-n>"],
-            "after": [],
-            "commands": [
-                {
-                    "command": ":nohl"
-                }
-            ]
-        },
-        {
-            "before": ["leader", "w"],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.files.save",
-                    "args": []
-                }
-            ]
-        },
-        {
-            "before": ["leader", "f"],
-            "after": [],
-            "commands": [
-                {
-                    "command": "editor.action.formatDocument",
-                    "args": []
-                }
-            ]
-        },
-        {
-            "before": ["<leader>", "q", "q"],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.closeActiveEditor"
-                }
-            ]
-        },
-        {
-            "before": ["<CR>"],
-            "after": ["o", "<Esc>"]
-        },
-        {
-            "before": ["w"],
-            "after": ["<leader>", "<leader>", "w"]
-        },
-        {
-            "before": ["f"],
-            "after": ["<leader>", "<leader>", "f"]
-        },
-        {
-            "before": ["b"],
-            "after": ["<leader>", "<leader>", "h"]
-        },
-        {
-            "before": ["e"],
-            "after": ["<leader>", "<leader>", "l"]
-        },
-        {
-            "before": ["r"],
-            "after": ["<leader>", "<leader>", "h"]
-        },
-        {
-            "before": ["<leader>", "d"],
-            "after": [],
-            "commands": [
-                {
-                    "command": "editor.action.previewDeclaration"
-                }
-            ]
+          "command": "workbench.action.files.save",
+          "args": []
         }
-    ],
-    "vim.leader": "<space>",
-    "vim.handleKeys": {
-        "<C-a>": false,
-        "<C-b>": false,
-        "<C-k>": false
+      ]
     },
-    "editor.lineNumbers": "relative",
-    "editor.minimap.enabled": false,
-    "window.zoomLevel": 0,
-    "gitlens.advanced.messages": {
-        "suppressResultsExplorerNotice": true,
-        "suppressShowKeyBindingsNotice": true
-    },
-    "gitlens.defaultDateStyle": "absolute",
-    "gitlens.currentLine.enabled": false,
-    "zenMode.hideStatusBar": false,
-    "terminal.integrated.shell.linux": "zsh",
-    "python.pythonPath": "/usr/bin/python3",
-    "prettier.eslintIntegration": true,
-    "emmet.includeLanguages": {
-        "javascript": "javascriptreact",
-        "vue-html": "html"
-    },
-    "explorer.openEditors.visible": 0,
-    "git.enableSmartCommit": true,
-    "vim.enableNeovim": true,
-    "zenMode.hideTabs": false,
-    "editor.formatOnSave": true,
-    "editor.tokenColorCustomizations": {
-        "textMateRules": [
-            {
-                "scope": "text.html.markdown.journal.task.open.bullet",
-                "settings": {
-                    "foreground": "#FFFF00"
-                }
-            },
-            {
-                "scope": "text.html.markdown.journal.task.open.marker",
-                "settings": {
-                    "foreground": "#FFFF00"
-                }
-            },
-            {
-                "scope": "text.html.markdown.journal.task.open.keyword",
-                "settings": {
-                    "fontStyle": "italic"
-                }
-            },
-            {
-                "scope": "text.html.markdown.journal.task.open.text",
-                "settings": {}
-            },
-            {
-                "scope": "text.html.markdown.journal.task.completed.keyword",
-                "settings": {
-                    "fontStyle": "italic"
-                }
-            },
-            {
-                "scope": "text.html.markdown.journal.task.completed.marker",
-                "settings": {
-                    "foreground": "#AAAAAA"
-                }
-            },
-            {
-                "scope": "text.html.markdown.journal.task.completed.text",
-                "settings": {
-                    "foreground": "#AAAAAA"
-                }
-            },
-            {
-                "scope": "text.html.markdown.journal.task.completed.bullet",
-                "settings": {
-                    "foreground": "#FFFF00"
-                }
-            },
-            {
-                "scope": "text.html.markdown.journal.memo.keyword",
-                "settings": {
-                    "fontStyle": "italic"
-                }
-            },
-            {
-                "scope": "text.html.markdown.journal.memo.bullet",
-                "settings": {
-                    "foreground": "#FFFF00"
-                }
-            },
-            {
-                "scope": "text.html.markdown.journal.scope",
-                "settings": {
-                    "foreground": "#FFFF00"
-                }
-            },
-            {
-                "scope": "text.html.markdown.journal.link.keyword",
-                "settings": {
-                    "fontStyle": "italic"
-                }
-            },
-            {
-                "scope": "text.html.markdown.journal.link.bullet",
-                "settings": {
-                    "foreground": "#FFFF00"
-                }
-            }
-        ]
-    },
-    "terminal.explorerKind": "external",
-    "vim.sneak": true,
-    "workbench.colorTheme": "Monokai Vibrant",
-    "editor.fontLigatures": true,
-    "editor.fontFamily": "'Fira Code','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
-    "git.defaultCloneDirectory": "~",
-    "gitlens.codeLens.enabled": false,
-    "gitlens.codeLens.authors.enabled": false,
-    "terminal.integrated.rendererType": "dom",
-    "github.hosts": [
+    {
+      "before": ["leader", "f"],
+      "after": [],
+      "commands": [
         {
-            "host": "https://github.com",
-            "username": "oauth",
-            "token": "system"
+          "command": "editor.action.formatDocument",
+          "args": []
         }
-    ],
-    "keyboard.dispatch": "keyCode",
-    "terminal.integrated.copyOnSelection": true,
-    "javascript.updateImportsOnFileMove.enabled": "always"
+      ]
+    },
+    {
+      "before": ["<leader>", "q", "q"],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.action.closeActiveEditor"
+        }
+      ]
+    },
+    {
+      "before": ["<CR>"],
+      "after": ["o", "<Esc>"]
+    },
+    {
+      "before": ["w"],
+      "after": ["<leader>", "<leader>", "w"]
+    },
+    {
+      "before": ["b"],
+      "after": ["<leader>", "<leader>", "b"]
+    },
+    {
+      "before": ["e"],
+      "after": ["<leader>", "<leader>", "l"]
+    },
+    {
+      "before": ["r"],
+      "after": ["<leader>", "<leader>", "h"]
+    },
+    {
+      "before": ["<leader>", "d"],
+      "after": [],
+      "commands": [
+        {
+          "command": "editor.action.previewDeclaration"
+        }
+      ]
+    },
+    {
+      "before": ["H"],
+      "after": ["^"]
+    },
+    {
+      "before": ["L"],
+      "after": ["$"]
+    }
+  ],
+  "vim.leader": "<space>",
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-b>": false,
+    "<C-k>": false
+  },
+  "editor.lineNumbers": "relative",
+  "editor.minimap.enabled": false,
+  "window.zoomLevel": 0,
+  "gitlens.advanced.messages": {
+    "suppressResultsExplorerNotice": true,
+    "suppressShowKeyBindingsNotice": true
+  },
+  "gitlens.defaultDateStyle": "absolute",
+  "gitlens.currentLine.enabled": false,
+  "zenMode.hideStatusBar": false,
+  "terminal.integrated.shell.linux": "zsh",
+  "python.pythonPath": "/usr/bin/python3",
+  "prettier.eslintIntegration": true,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "vue-html": "html"
+  },
+  "explorer.openEditors.visible": 0,
+  "git.enableSmartCommit": true,
+  "vim.enableNeovim": true,
+  "zenMode.hideTabs": false,
+  "editor.formatOnSave": true,
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "text.html.markdown.journal.task.open.bullet",
+        "settings": {
+          "foreground": "#FFFF00"
+        }
+      },
+      {
+        "scope": "text.html.markdown.journal.task.open.marker",
+        "settings": {
+          "foreground": "#FFFF00"
+        }
+      },
+      {
+        "scope": "text.html.markdown.journal.task.open.keyword",
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": "text.html.markdown.journal.task.open.text",
+        "settings": {}
+      },
+      {
+        "scope": "text.html.markdown.journal.task.completed.keyword",
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": "text.html.markdown.journal.task.completed.marker",
+        "settings": {
+          "foreground": "#AAAAAA"
+        }
+      },
+      {
+        "scope": "text.html.markdown.journal.task.completed.text",
+        "settings": {
+          "foreground": "#AAAAAA"
+        }
+      },
+      {
+        "scope": "text.html.markdown.journal.task.completed.bullet",
+        "settings": {
+          "foreground": "#FFFF00"
+        }
+      },
+      {
+        "scope": "text.html.markdown.journal.memo.keyword",
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": "text.html.markdown.journal.memo.bullet",
+        "settings": {
+          "foreground": "#FFFF00"
+        }
+      },
+      {
+        "scope": "text.html.markdown.journal.scope",
+        "settings": {
+          "foreground": "#FFFF00"
+        }
+      },
+      {
+        "scope": "text.html.markdown.journal.link.keyword",
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": "text.html.markdown.journal.link.bullet",
+        "settings": {
+          "foreground": "#FFFF00"
+        }
+      }
+    ]
+  },
+  "terminal.explorerKind": "external",
+  "vim.sneak": true,
+  "workbench.colorTheme": "Monokai Vibrant",
+  "editor.fontLigatures": true,
+  "editor.fontFamily": "'Fira Code','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+  "git.defaultCloneDirectory": "~",
+  "gitlens.codeLens.enabled": false,
+  "gitlens.codeLens.authors.enabled": false,
+  "terminal.integrated.rendererType": "dom",
+  "github.hosts": [
+    {
+      "host": "https://github.com",
+      "username": "oauth",
+      "token": "system"
+    }
+  ],
+  "keyboard.dispatch": "keyCode",
+  "terminal.integrated.copyOnSelection": true,
+  "javascript.updateImportsOnFileMove.enabled": "always"
 }
