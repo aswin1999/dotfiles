@@ -83,8 +83,26 @@
       ]
     },
     {
+      "before": ["J"],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.action.previousEditor"
+        }
+      ]
+    },
+    {
+      "before": ["K"],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.action.nextEditor"
+        }
+      ]
+    },
+    {
       "before": ["H"],
-      "after": ["^"]
+      "after": ["0"]
     },
     {
       "before": ["L"],
@@ -108,7 +126,6 @@
   "gitlens.currentLine.enabled": false,
   "zenMode.hideStatusBar": false,
   "terminal.integrated.shell.linux": "zsh",
-  "python.pythonPath": "/usr/bin/python3",
   "prettier.eslintIntegration": true,
   "emmet.includeLanguages": {
     "javascript": "javascriptreact",
@@ -116,9 +133,7 @@
   },
   "explorer.openEditors.visible": 0,
   "git.enableSmartCommit": true,
-  "vim.enableNeovim": true,
   "zenMode.hideTabs": false,
-  "editor.formatOnSave": true,
   "editor.tokenColorCustomizations": {
     "textMateRules": [
       {
@@ -201,21 +216,18 @@
   },
   "terminal.explorerKind": "external",
   "vim.sneak": true,
-  "workbench.colorTheme": "Monokai Vibrant",
+  "workbench.colorTheme": "Monokai",
   "editor.fontLigatures": true,
-  "editor.fontFamily": "'Fira Code','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+  "editor.fontFamily": "'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
   "git.defaultCloneDirectory": "~",
   "gitlens.codeLens.enabled": false,
   "gitlens.codeLens.authors.enabled": false,
   "terminal.integrated.rendererType": "dom",
-  "github.hosts": [
-    {
-      "host": "https://github.com",
-      "username": "oauth",
-      "token": "system"
-    }
-  ],
   "keyboard.dispatch": "keyCode",
   "terminal.integrated.copyOnSelection": true,
-  "javascript.updateImportsOnFileMove.enabled": "always"
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "prettier.tslintIntegration": true,
+  "editor.formatOnSave": true,
+  "workbench.activityBar.visible": true
 }
