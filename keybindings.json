@@ -1,5 +1,9 @@
-// Place your key bindings in this file to overwrite the defaults
 [
+  {
+    "key": "tab",
+    "command": "text-tables.gotoNextCell",
+    "when": "tableMode"
+  },
   {
     "key": "ctrl+h",
     "command": "workbench.action.focusPreviousGroup",
@@ -21,22 +25,6 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "ctrl+k z",
-    "command": "workbench.action.toggleFullScreen"
-  },
-  {
-    "key": "f11",
-    "command": "-workbench.action.toggleFullScreen"
-  },
-  {
-    "key": "f11",
-    "command": "workbench.action.toggleZenMode"
-  },
-  {
-    "key": "ctrl+k z",
-    "command": "-workbench.action.toggleZenMode"
-  },
-  {
     "key": "alt+l",
     "command": "cursorRight",
     "when": "textInputFocus"
@@ -55,11 +43,6 @@
     "key": "alt+k",
     "command": "cursorUp",
     "when": "textInputFocus"
-  },
-  {
-    "key": "ctrl+f",
-    "command": "-workbench.action.terminal.focusFindWidget",
-    "when": "terminalFocus"
   },
   {
     "key": "ctrl+t",
@@ -222,12 +205,12 @@
     "command": "-workbench.action.previousEditor"
   },
   {
-    "key": "alt+j",
+    "key": "j",
     "command": "list.focusDown",
     "when": "listFocus && !inputFocus"
   },
   {
-    "key": "alt+k",
+    "key": "k",
     "command": "list.focusUp",
     "when": "listFocus && !inputFocus"
   },
@@ -271,5 +254,115 @@
     "key": "shift+f8",
     "command": "-editor.action.marker.prevInFiles",
     "when": "editorFocus && !editorReadonly"
-  }
+  },
+  {
+    "key": "/",
+    "command": "list.toggleKeyboardNavigation",
+    "when": "listFocus && listSupportsKeyboardNavigation && !inputFocus"
+  },
+  {
+    "key": "/",
+    "command": "-list.toggleKeyboardNavigation",
+    "when": "listFocus && listSupportsKeyboardNavigation && !inputFocus"
+  },
+  {
+    "key": "ctrl+shift+j",
+    "command": "workbench.action.navigateDown"
+  },
+  {
+    "key": "ctrl+shift+h",
+    "command": "workbench.action.navigateLeft"
+  },
+  {
+    "key": "ctrl+shift+l",
+    "command": "workbench.action.navigateRight"
+  },
+  {
+    "key": "ctrl+shift+k",
+    "command": "workbench.action.navigateUp"
+  },
+  {
+    "key": "ctrl+k ctrl+t",
+    "command": "text-tables.tableModeOn",
+    "when": "editorFocus && !tableMode"
+  },
+  {
+    "key": "ctrl+q ctrl+q",
+    "command": "-text-tables.tableModeOn",
+    "when": "editorFocus && !tableMode"
+  },
+  {
+    "key": "ctrl+k ctrl+t",
+    "command": "text-tables.tableModeOff",
+    "when": "editorFocus && tableMode"
+  },
+  {
+    "key": "ctrl+q ctrl+q",
+    "command": "-text-tables.tableModeOff",
+    "when": "editorFocus && tableMode"
+  },
+  {
+    "key": "alt+space",
+    "command": "editor.action.triggerSuggest",
+    "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+space",
+    "command": "-editor.action.triggerSuggest",
+    "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+space",
+    "command": "toggleSuggestionDetails",
+    "when": "suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "ctrl+space",
+    "command": "-toggleSuggestionDetails",
+    "when": "suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "ctrl+space",
+    "command": "workbench.action.showCommands"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "workbench.action.terminal.scrollUp",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+shift+up",
+    "command": "-workbench.action.terminal.scrollUp",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "workbench.action.terminal.scrollDown",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+shift+down",
+    "command": "-workbench.action.terminal.scrollDown",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+alt+j",
+    "command": "workbench.action.terminal.scrollToBottom",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "shift+end",
+    "command": "-workbench.action.terminal.scrollToBottom",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+alt+k",
+    "command": "workbench.action.terminal.scrollToTop",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "shift+home",
+    "command": "-workbench.action.terminal.scrollToTop",
+    "when": "terminalFocus"
+  },
 ]
