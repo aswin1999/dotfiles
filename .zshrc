@@ -36,7 +36,7 @@ ZSH_THEME="spaceship"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
- ENABLE_CORRECTION="true"
+ # ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
  COMPLETION_WAITING_DOTS="true"
@@ -62,6 +62,7 @@ plugins=(
   git
   npm
   zsh-syntax-highlighting
+  zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -97,19 +98,27 @@ source $ZSH/oh-my-zsh.sh
 export EDITOR="nvim"
 alias fzfag="ag --nobreak --noheading . | fzf"
 alias tmux="tmux -2 -u"
-alias vim="nvim.appimage"
+# alias vim="nvim.appimage"
 alias c="clear"
-
-source ~/.local/bin/virtualenvwrapper.sh
-export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
-source ~/.local/bin/virtualenvwrapper.sh
-
 
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$HOME/flutter/bin/
+export PATH=$PATH:$HOME/.emacs.d/bin/
+
+export ANDROID_HOME=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+export secret_key=kjasdhfkahsdkfhadf
 
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 if [[ $TERM = dumb ]]; then
   unset zle_bracketed_paste
 fi
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
